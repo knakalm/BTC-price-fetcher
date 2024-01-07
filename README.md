@@ -90,3 +90,6 @@ created if it doesn't already exist.
 
 ### Terraform
 eks_cluser.tf sets up EKS cluster and some supporting resources well enough to deploy the pods into it and receive external IP for LoadBalancer service. For some reason the TCP connection is hang up when trying to connect to the microservice and I couldn't figure out why. 
+
+### Postman
+I've tested the app using Postman. Don't forget to set JSON format when sending request for `id_token` :)
