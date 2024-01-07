@@ -87,3 +87,6 @@ To deploy this application using Helm, use
 This command installs the Helm chart named `btc-price-app-helm` as `btc-price-app` in the
 Kubernetes namespace `btc-app`. The `--create-namespace` flag ensures that the namespace is
 created if it doesn't already exist.
+
+### Terraform
+eks_cluser.tf sets up EKS cluster and some supporting resources well enough to deploy the pods into it and receive external IP for LoadBalancer service. For some reason the TCP connection is hang up when trying to connect to the microservice and I couldn't figure out why. 
